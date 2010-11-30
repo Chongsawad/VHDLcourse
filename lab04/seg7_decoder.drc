@@ -1,0 +1,8 @@
+Release 12.3 Drc M.70d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Tue Nov 30 12:23:22 2010
+
+drc -z seg7_decoder.ncd seg7_decoder.pcf
+
+DRC detected 0 errors and 0 warnings.

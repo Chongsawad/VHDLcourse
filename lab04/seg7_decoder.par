@@ -1,7 +1,7 @@
 Release 12.3 par M.70d (nt)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
-SYSTEM::  Tue Nov 30 12:15:22 2010
+SYSTEM::  Tue Nov 30 12:21:34 2010
 
 par -w -intstyle ise -ol high -t 1 seg7_decoder_map.ncd seg7_decoder.ncd
 seg7_decoder.pcf 
@@ -30,10 +30,14 @@ Design Summary Report:
    Number of External Input IOBs                  7
 
       Number of External Input IBUFs              7
+        Number of LOCed External Input IBUFs      7 out of 7     100%
+
 
    Number of External Output IOBs                 8
 
       Number of External Output IOBs              8
+        Number of LOCed External Output IOBs      8 out of 8     100%
+
 
    Number of External Bidir IOBs                  0
 
@@ -58,46 +62,39 @@ Total REAL time at the beginning of Placer: 2 secs
 Total CPU  time at the beginning of Placer: 2 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:c3) REAL time: 2 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:a4a53bc1) REAL time: 2 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:c3) REAL time: 2 secs 
+Phase 2.7  Design Feasibility Check (Checksum:a4a53bc1) REAL time: 2 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:c3) REAL time: 2 secs 
+Phase 3.31  Local Placement Optimization (Checksum:a4a53bc1) REAL time: 2 secs 
 
 Phase 4.2  Initial Clock and IO Placement
-...........
-Phase 4.2  Initial Clock and IO Placement (Checksum:f3a5903) REAL time: 2 secs 
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:b3e35b81) REAL time: 2 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:f3a5903) REAL time: 2 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:b3e35b81) REAL time: 2 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:f3a5903) REAL time: 2 secs 
+Phase 6.36  Local Placement Optimization (Checksum:b3e35b81) REAL time: 2 secs 
 
-Phase 7.3  Local Placement Optimization
-............
-Phase 7.3  Local Placement Optimization (Checksum:ac4ddf8c) REAL time: 3 secs 
+Phase 7.8  Global Placement
+..
+Phase 7.8  Global Placement (Checksum:bcc9f249) REAL time: 2 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:ac4ddf8c) REAL time: 3 secs 
+Phase 8.5  Local Placement Optimization (Checksum:bcc9f249) REAL time: 2 secs 
 
-Phase 9.8  Global Placement
-..
-Phase 9.8  Global Placement (Checksum:af0ca164) REAL time: 3 secs 
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:b838ce49) REAL time: 2 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:af0ca164) REAL time: 3 secs 
+Phase 10.5  Local Placement Optimization (Checksum:b838ce49) REAL time: 2 secs 
 
-Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:aed3dcf1) REAL time: 3 secs 
-
-Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:aed3dcf1) REAL time: 3 secs 
-
-Total REAL time to Placer completion: 3 secs 
-Total CPU  time to Placer completion: 3 secs 
+Total REAL time to Placer completion: 2 secs 
+Total CPU  time to Placer completion: 2 secs 
 Writing design to file seg7_decoder.ncd
 
 
@@ -105,28 +102,28 @@ Writing design to file seg7_decoder.ncd
 Starting Router
 
 
-Phase  1  : 53 unrouted;      REAL time: 12 secs 
+Phase  1  : 53 unrouted;      REAL time: 10 secs 
 
-Phase  2  : 48 unrouted;      REAL time: 12 secs 
+Phase  2  : 48 unrouted;      REAL time: 10 secs 
 
-Phase  3  : 5 unrouted;      REAL time: 12 secs 
+Phase  3  : 5 unrouted;      REAL time: 10 secs 
 
-Phase  4  : 5 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  4  : 5 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
 Updating file: seg7_decoder.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Total REAL time to Router completion: 13 secs 
-Total CPU time to Router completion: 12 secs 
+Total REAL time to Router completion: 11 secs 
+Total CPU time to Router completion: 11 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -144,7 +141,7 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|           clk_BUFGP | BUFGMUX_X2Y10| No   |    4 |  0.010     |  0.176      |
+|           clk_BUFGP | BUFGMUX_X2Y11| No   |    4 |  0.013     |  0.163      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -170,8 +167,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 14 secs 
-Total CPU time to PAR completion: 13 secs 
+Total REAL time to PAR completion: 12 secs 
+Total CPU time to PAR completion: 12 secs 
 
 Peak Memory Usage:  188 MB
 
