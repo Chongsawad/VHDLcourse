@@ -41,6 +41,8 @@ end seg7_3digit;
 architecture Behavioral of seg7_3digit is
 	signal scan_en	:	std_logic;
 	signal delay_cnt	:	integer range 0 to 10000;
+	signal digit_cnt	:	integer range 0 to 3;
+	signal digit_scan	:	std_logic_vector (2 downto 0);
 begin
 	-- Scan Delay --
 	process(clk, rst)
@@ -59,6 +61,28 @@ begin
 		end if;
 	end process;
 
-
+	-- Digit Scan --
+	process(clk, rst)
+	begin
+		if rst = '1' then
+			digit_cnt <= 0;
+			digit_scan <= "111";
+		elsif clk'event and clk = '1' then
+			if scan_en = '1' then
+				if digit_cnt = 3 then
+					digit_cnt <= 1;
+				else
+					digit_cnt <= digit_cnt + 1;
+				end if;
+				
+				case digit_cnt is
+					when 1 => digit_scan <= "110";
+					when 2 => digit_scan <= "101";
+					when 3 => digit_scan <= "100";
+					when others => digit_scan <= "111";
+				end case;
+			end if;
+		end if;
+	end process;
 end Behavioral;
 

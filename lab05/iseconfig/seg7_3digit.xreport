@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2010-11-30T13:44:56</DateModified>
+  <DateModified>2010-11-30T15:05:17</DateModified>
   <ModuleName>seg7_3digit</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/VHDL/lab05/iseconfig/seg7_3digit.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/VHDL/lab05</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/VHDL/lab05\</ImplementationReportsDirectory>
   <DateInitialized>2010-11-30T13:44:56</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
