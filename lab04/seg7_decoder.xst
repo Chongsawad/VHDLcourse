@@ -1,0 +1,5 @@
+set -tmpdir "D:/VHDL/lab04/xst/projnav.tmp"
+set -xsthdpdir "D:/VHDL/lab04/xst"
+elaborate
+-ifn seg7_decoder.prj
+-ifmt mixed

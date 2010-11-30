@@ -21,8 +21,147 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="lab04.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="seg7_decoder.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="seg7_decoder.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="seg7_decoder.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="seg7_decoder.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="seg7_decoder.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="seg7_decoder.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="seg7_decoder.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="seg7_decoder.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="seg7_decoder.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="seg7_decoder.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="seg7_decoder.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="seg7_decoder.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="seg7_decoder.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="seg7_decoder.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="seg7_decoder.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="seg7_decoder.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="seg7_decoder.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="seg7_decoder.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="seg7_decoder.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="seg7_decoder_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="seg7_decoder_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="seg7_decoder_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="seg7_decoder_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="seg7_decoder_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="seg7_decoder_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="seg7_decoder_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="seg7_decoder_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="seg7_decoder_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="seg7_decoder_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="seg7_decoder_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="seg7_decoder_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="seg7_decoder_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="seg7_decoder_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="seg7_decoder_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1291093906" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1291093906">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1291093906" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3626701211782155418" xil_pn:start_ts="1291093906">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1291093906" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="5129036520627045101" xil_pn:start_ts="1291093906">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1291093906" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1291093906">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1291093906" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="4791971221791600612" xil_pn:start_ts="1291093906">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1291093906" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1291093906">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1291093906" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-315233981136628425" xil_pn:start_ts="1291093906">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1291094104" xil_pn:in_ck="-8772419795124268934" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="961730686328644222" xil_pn:start_ts="1291094097">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="seg7_decoder.lso"/>
+      <outfile xil_pn:name="seg7_decoder.ngc"/>
+      <outfile xil_pn:name="seg7_decoder.ngr"/>
+      <outfile xil_pn:name="seg7_decoder.prj"/>
+      <outfile xil_pn:name="seg7_decoder.stx"/>
+      <outfile xil_pn:name="seg7_decoder.syr"/>
+      <outfile xil_pn:name="seg7_decoder.xst"/>
+      <outfile xil_pn:name="seg7_decoder_vhdl.prj"/>
+      <outfile xil_pn:name="seg7_decoder_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1291094112" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7571971871055820903" xil_pn:start_ts="1291094112">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1291094117" xil_pn:in_ck="-9029883076595938703" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7087375180801042778" xil_pn:start_ts="1291094112">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="seg7_decoder.bld"/>
+      <outfile xil_pn:name="seg7_decoder.ngd"/>
+      <outfile xil_pn:name="seg7_decoder_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1291094122" xil_pn:in_ck="-9029883076595938702" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1291094117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="seg7_decoder.pcf"/>
+      <outfile xil_pn:name="seg7_decoder_map.map"/>
+      <outfile xil_pn:name="seg7_decoder_map.mrp"/>
+      <outfile xil_pn:name="seg7_decoder_map.ncd"/>
+      <outfile xil_pn:name="seg7_decoder_map.ngm"/>
+      <outfile xil_pn:name="seg7_decoder_map.xrpt"/>
+      <outfile xil_pn:name="seg7_decoder_summary.xml"/>
+      <outfile xil_pn:name="seg7_decoder_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1291094142" xil_pn:in_ck="-5651663702814309749" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1291094122">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="seg7_decoder.ncd"/>
+      <outfile xil_pn:name="seg7_decoder.pad"/>
+      <outfile xil_pn:name="seg7_decoder.par"/>
+      <outfile xil_pn:name="seg7_decoder.ptwx"/>
+      <outfile xil_pn:name="seg7_decoder.unroutes"/>
+      <outfile xil_pn:name="seg7_decoder.xpi"/>
+      <outfile xil_pn:name="seg7_decoder_pad.csv"/>
+      <outfile xil_pn:name="seg7_decoder_pad.txt"/>
+      <outfile xil_pn:name="seg7_decoder_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1291094142" xil_pn:in_ck="-9029883076595938834" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1291094138">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="seg7_decoder.twr"/>
+      <outfile xil_pn:name="seg7_decoder.twx"/>
+    </transform>
+  </transforms>
 
 </generated_project>

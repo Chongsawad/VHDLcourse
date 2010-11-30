@@ -40,36 +40,55 @@ entity seg7_decoder is
 end seg7_decoder;
 
 architecture seg7_arch of seg7_decoder is
-
+	signal seg7_tmp	: std_logic_vector (7 downto 0);
+	signal reg_d	: std_logic_vector (3 downto 0);
 begin
-	process(Bin_in)
-		begin
-		case Bin_in is
-			when "0000" =>
-				Seg7_out <= zero_seg;			
-			when "0001" =>
-				Seg7_out <= one_seg;
-			when "0010" =>
-				Seg7_out <= two_seg;
-			when "0011" =>
-				Seg7_out <= three_seg;
-			when "0100" =>
-				Seg7_out <= four_seg;
-			when "0101" =>
-				Seg7_out <= five_seg;		
-			when "0110" =>
-				Seg7_out <= six_seg;	
-			when "0111" =>
-				Seg7_out <= seven_seg;	
-			when "1000" =>
-				Seg7_out <= eight_seg;	
-			when "1001" =>
-				Seg7_out <= nine_seg;	
-			when others =>
-				Seg7_out <= off_seg;
-		end case;
+
+-- Register
+	process(clk, rst)
+	begin
+	
+		if rst = '1' then
+			reg_d <= "0000";
+		elsif clk'event and clk = '1' then
+			if in_en = '1' then
+				reg_d <= bin_in;
+			end if;
+		end if;
 		
 	end process;
+
+
+-- 7 Segment decoder
+	process(reg_d)
+	begin
+		case reg_d is
+			when "0000" =>
+				seg7_tmp <= zero_seg;			
+			when "0001" =>
+				seg7_tmp <= one_seg;
+			when "0010" =>
+				seg7_tmp <= two_seg;
+			when "0011" =>
+				seg7_tmp <= three_seg;
+			when "0100" =>
+				seg7_tmp <= four_seg;
+			when "0101" =>
+				seg7_tmp <= five_seg;		
+			when "0110" =>
+				seg7_tmp <= six_seg;	
+			when "0111" =>
+				seg7_tmp <= seven_seg;	
+			when "1000" =>
+				seg7_tmp <= eight_seg;	
+			when "1001" =>
+				seg7_tmp <= nine_seg;	
+			when others =>
+				seg7_tmp <= off_seg;
+		end case;
+	end process;
+	
+	seg7_out <= seg7_tmp;
 	
 end seg7_arch;
 
