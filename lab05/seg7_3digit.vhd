@@ -49,7 +49,13 @@ begin
 			delay_cnt <= 0;
 			scan_en <= '0';
 		elsif clk'event and clk = '1' then
-		
+			if delay_cnt = 10000 then
+				delay_cnt <= 0;
+				scan_en <= '1';
+			else
+				delay_cnt <= delay_cnt + 1;
+				scan_en <= '0';
+			end if;
 		end if;
 	end process;
 
