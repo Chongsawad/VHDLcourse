@@ -1,6 +1,9 @@
-V3 3
-FL D:/VHDL/lab05/seg7_3digit.vhd 2010/11/30.15:17:16 M.70d
-EN work/seg7_3digit 1291105047 FL D:/VHDL/lab05/seg7_3digit.vhd \
+V3 5
+FL D:/VHDL/lab05/lab02_pack.vhd 2010/11/30.11:31:30 M.70d
+PH work/lab02_pack 1291109293 FL D:/VHDL/lab05/lab02_pack.vhd \
       PB ieee/std_logic_1164 1284609568
-AR work/seg7_3digit/Behavioral 1291105048 \
-      FL D:/VHDL/lab05/seg7_3digit.vhd EN work/seg7_3digit 1291105047
+FL D:/VHDL/lab05/seg7_3digit.vhd 2010/11/30.16:26:09 M.70d
+EN work/seg7_3digit 1291109294 FL D:/VHDL/lab05/seg7_3digit.vhd \
+      PB ieee/std_logic_1164 1284609568 PH work/lab02_pack 1291109293
+AR work/seg7_3digit/Behavioral 1291109295 \
+      FL D:/VHDL/lab05/seg7_3digit.vhd EN work/seg7_3digit 1291109294

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\VHDL\lab05\seg7_3digit.ncd
+OUTFILE=D:\VHDL\lab05\seg7_3digit.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=D:\VHDL\lab05
+LICENSE=WebPack
+USER_INFO=0_0_918

@@ -1,0 +1,41 @@
+xst -intstyle ise -ifn "D:/VHDL/lab05/seg7_3digit.xst" -ofn "D:/VHDL/lab05/seg7_3digit.syr" 
+xst -intstyle ise -ifn "D:/VHDL/lab05/seg7_3digit.xst" -ofn "D:/VHDL/lab05/seg7_3digit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seg7_constrain.ucf -p xc3s500e-fg320-5 seg7_3digit.ngc seg7_3digit.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o seg7_3digit_map.ncd seg7_3digit.ngd seg7_3digit.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_3digit_map.ncd seg7_3digit.ncd seg7_3digit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seg7_3digit.twx seg7_3digit.ncd -o seg7_3digit.twr seg7_3digit.pcf -ucf seg7_constrain.ucf 
+xst -intstyle ise -ifn "D:/VHDL/lab05/seg7_3digit.xst" -ofn "D:/VHDL/lab05/seg7_3digit.syr" 
+xst -intstyle ise -ifn "D:/VHDL/lab05/seg7_3digit.xst" -ofn "D:/VHDL/lab05/seg7_3digit.syr" 
+xst -intstyle ise -ifn "D:/VHDL/lab05/seg7_3digit.xst" -ofn "D:/VHDL/lab05/seg7_3digit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seg7_constrain.ucf -p xc3s500e-fg320-5 seg7_3digit.ngc seg7_3digit.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o seg7_3digit_map.ncd seg7_3digit.ngd seg7_3digit.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_3digit_map.ncd seg7_3digit.ncd seg7_3digit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seg7_3digit.twx seg7_3digit.ncd -o seg7_3digit.twr seg7_3digit.pcf -ucf seg7_constrain.ucf 
+bitgen -intstyle ise -f seg7_3digit.ut seg7_3digit.ncd 
+xst -intstyle ise -ifn "D:/VHDL/lab05/seg7_3digit.xst" -ofn "D:/VHDL/lab05/seg7_3digit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seg7_constrain.ucf -p xc3s500e-fg320-5 seg7_3digit.ngc seg7_3digit.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o seg7_3digit_map.ncd seg7_3digit.ngd seg7_3digit.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_3digit_map.ncd seg7_3digit.ncd seg7_3digit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seg7_3digit.twx seg7_3digit.ncd -o seg7_3digit.twr seg7_3digit.pcf -ucf seg7_constrain.ucf 
+bitgen -intstyle ise -f seg7_3digit.ut seg7_3digit.ncd 
+xst -intstyle ise -ifn "D:/VHDL/lab05/seg7_3digit.xst" -ofn "D:/VHDL/lab05/seg7_3digit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seg7_constrain.ucf -p xc3s500e-fg320-5 seg7_3digit.ngc seg7_3digit.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o seg7_3digit_map.ncd seg7_3digit.ngd seg7_3digit.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_3digit_map.ncd seg7_3digit.ncd seg7_3digit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seg7_3digit.twx seg7_3digit.ncd -o seg7_3digit.twr seg7_3digit.pcf -ucf seg7_constrain.ucf 
+bitgen -intstyle ise -f seg7_3digit.ut seg7_3digit.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seg7_constrain.ucf -p xc3s500e-fg320-5 seg7_3digit.ngc seg7_3digit.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o seg7_3digit_map.ncd seg7_3digit.ngd seg7_3digit.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_3digit_map.ncd seg7_3digit.ncd seg7_3digit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seg7_3digit.twx seg7_3digit.ncd -o seg7_3digit.twr seg7_3digit.pcf -ucf seg7_constrain.ucf 
+bitgen -intstyle ise -f seg7_3digit.ut seg7_3digit.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seg7_constrain.ucf -p xc3s500e-fg320-5 seg7_3digit.ngc seg7_3digit.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o seg7_3digit_map.ncd seg7_3digit.ngd seg7_3digit.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_3digit_map.ncd seg7_3digit.ncd seg7_3digit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seg7_3digit.twx seg7_3digit.ncd -o seg7_3digit.twr seg7_3digit.pcf -ucf seg7_constrain.ucf 
+bitgen -intstyle ise -f seg7_3digit.ut seg7_3digit.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seg7_constrain.ucf -p xc3s500e-fg320-5 seg7_3digit.ngc seg7_3digit.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o seg7_3digit_map.ncd seg7_3digit.ngd seg7_3digit.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_3digit_map.ncd seg7_3digit.ncd seg7_3digit.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seg7_3digit.twx seg7_3digit.ncd -o seg7_3digit.twr seg7_3digit.pcf -ucf seg7_constrain.ucf 
+bitgen -intstyle ise -f seg7_3digit.ut seg7_3digit.ncd 

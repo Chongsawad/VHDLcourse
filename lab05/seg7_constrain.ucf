@@ -1,0 +1,27 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "Bin_in[0]" LOC = G18;
+NET "Bin_in[1]" LOC = H18;
+NET "Bin_in[2]" LOC = K18;
+NET "Bin_in[3]" LOC = K17;
+NET "Seg7_out[0]" LOC = C17;
+NET "Seg7_out[1]" LOC = H14;
+NET "Seg7_out[2]" LOC = J17;
+NET "Seg7_out[3]" LOC = G14;
+NET "Seg7_out[4]" LOC = D16;
+NET "Seg7_out[5]" LOC = D17;
+NET "Seg7_out[6]" LOC = F18;
+NET "Seg7_out[7]" LOC = L18;
+
+NET "clk" LOC = B8;
+NET "rst" LOC = H13;
+
+NET "reg_inen<0>" LOC = B18;
+NET "reg_inen<1>" LOC = D18;
+NET "reg_inen<2>" LOC = E18;
+
+NET "digit_scan<2>" LOC = F17;
+NET "digit_scan<0>" LOC = H17;
+NET "digit_scan<1>" LOC = C18;
+NET "digit_scan<3>" LOC = F15;
