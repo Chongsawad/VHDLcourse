@@ -43,45 +43,48 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-Bin_in<0>      |Seg7_out<1>    |    5.984|
-Bin_in<0>      |Seg7_out<2>    |    6.424|
-Bin_in<0>      |Seg7_out<3>    |    5.976|
-Bin_in<0>      |Seg7_out<4>    |    6.819|
-Bin_in<0>      |Seg7_out<5>    |    8.775|
-Bin_in<0>      |Seg7_out<6>    |    5.908|
-Bin_in<0>      |Seg7_out<7>    |    6.285|
-Bin_in<1>      |Seg7_out<1>    |    5.730|
-Bin_in<1>      |Seg7_out<2>    |    6.019|
-Bin_in<1>      |Seg7_out<3>    |    6.468|
-Bin_in<1>      |Seg7_out<4>    |    6.536|
-Bin_in<1>      |Seg7_out<5>    |    9.267|
-Bin_in<1>      |Seg7_out<6>    |    6.366|
-Bin_in<1>      |Seg7_out<7>    |    5.858|
-Bin_in<2>      |Seg7_out<1>    |    6.220|
-Bin_in<2>      |Seg7_out<2>    |    6.520|
-Bin_in<2>      |Seg7_out<3>    |    6.599|
-Bin_in<2>      |Seg7_out<4>    |    7.060|
-Bin_in<2>      |Seg7_out<5>    |    9.399|
-Bin_in<2>      |Seg7_out<6>    |    6.475|
-Bin_in<2>      |Seg7_out<7>    |    6.415|
-Bin_in<3>      |Seg7_out<1>    |    5.918|
-Bin_in<3>      |Seg7_out<2>    |    6.542|
-Bin_in<3>      |Seg7_out<3>    |    7.096|
-Bin_in<3>      |Seg7_out<4>    |    6.702|
-Bin_in<3>      |Seg7_out<5>    |    9.723|
-Bin_in<3>      |Seg7_out<6>    |    7.023|
-Bin_in<3>      |Seg7_out<7>    |    6.432|
+Bin_in<0>      |Seg7_out<1>    |    6.166|
+Bin_in<0>      |Seg7_out<2>    |    6.417|
+Bin_in<0>      |Seg7_out<3>    |    7.077|
+Bin_in<0>      |Seg7_out<4>    |    6.994|
+Bin_in<0>      |Seg7_out<5>    |    7.374|
+Bin_in<0>      |Seg7_out<6>    |    6.423|
+Bin_in<0>      |Seg7_out<7>    |    6.713|
+Bin_in<1>      |Seg7_out<0>    |    7.082|
+Bin_in<1>      |Seg7_out<1>    |    5.689|
+Bin_in<1>      |Seg7_out<2>    |    6.547|
+Bin_in<1>      |Seg7_out<3>    |    6.562|
+Bin_in<1>      |Seg7_out<4>    |    6.490|
+Bin_in<1>      |Seg7_out<5>    |    6.830|
+Bin_in<1>      |Seg7_out<6>    |    6.524|
+Bin_in<1>      |Seg7_out<7>    |    6.814|
+Bin_in<2>      |Seg7_out<0>    |    7.133|
+Bin_in<2>      |Seg7_out<1>    |    6.525|
+Bin_in<2>      |Seg7_out<2>    |    6.598|
+Bin_in<2>      |Seg7_out<3>    |    7.303|
+Bin_in<2>      |Seg7_out<4>    |    7.376|
+Bin_in<2>      |Seg7_out<5>    |    7.605|
+Bin_in<2>      |Seg7_out<6>    |    6.553|
+Bin_in<2>      |Seg7_out<7>    |    6.843|
+Bin_in<3>      |Seg7_out<0>    |    7.918|
+Bin_in<3>      |Seg7_out<1>    |    5.998|
+Bin_in<3>      |Seg7_out<2>    |    7.383|
+Bin_in<3>      |Seg7_out<3>    |    6.728|
+Bin_in<3>      |Seg7_out<4>    |    6.793|
+Bin_in<3>      |Seg7_out<5>    |    6.974|
+Bin_in<3>      |Seg7_out<6>    |    7.394|
+Bin_in<3>      |Seg7_out<7>    |    7.684|
 ---------------+---------------+---------+
 
 
-Analysis completed Mon Nov 29 16:56:56 2010 
+Analysis completed Tue Nov 30 11:37:26 2010 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 92 MB
+Peak Memory Usage: 112 MB
 
 
 

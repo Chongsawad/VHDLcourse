@@ -2,19 +2,13 @@
 <DARoots Version="1" Minor="7">
 	<FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
 		<Filter Type="EDIFSrcs"/>
-		<File Path="C:/Documents and Settings/lab03/seg7_decoder.ngc">
+		<File Path="D:/VHDL/lab03/seg7_decoder.ngc">
 			<FileInfo RelPath="seg7_decoder.ngc"/>
-		</File>
-		<File Path="$PDATADIR/sources_1/ports.xml">
-			<FileInfo SFType="PortsDb"/>
-		</File>
-		<File Path="$PDATADIR/sources_1/chipscope.xml">
-			<FileInfo SFType="ChipscopeDb"/>
 		</File>
 		<Config>
 			<Option Name="DesignMode" Val="GateLvl"/>
 			<Option Name="GateLvlMode" Val="EDIF"/>
-			<Option Name="TopFile" Val="C:/Documents and Settings/lab03/seg7_decoder.ngc"/>
+			<Option Name="TopFile" Val="D:/VHDL/lab03/seg7_decoder.ngc"/>
 		</Config>
 	</FileSet>
 </DARoots>

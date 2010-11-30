@@ -8,3 +8,25 @@ map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o seg7_de
 par -w -intstyle ise -ol high -t 1 seg7_decoder_map.ncd seg7_decoder.ncd seg7_decoder.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seg7_decoder.twx seg7_decoder.ncd -o seg7_decoder.twr seg7_decoder.pcf -ucf seg7_constrain.ucf 
 bitgen -intstyle ise -f seg7_decoder.ut seg7_decoder.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seg7_constrain.ucf -p xc3s500e-fg320-5 seg7_decoder.ngc seg7_decoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o seg7_decoder_map.ncd seg7_decoder.ngd seg7_decoder.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_decoder_map.ncd seg7_decoder.ncd seg7_decoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seg7_decoder.twx seg7_decoder.ncd -o seg7_decoder.twr seg7_decoder.pcf -ucf seg7_constrain.ucf 
+bitgen -intstyle ise -f seg7_decoder.ut seg7_decoder.ncd 
+xst -intstyle ise -ifn "D:/VHDL/lab03/seg7_decoder.xst" -ofn "D:/VHDL/lab03/seg7_decoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seg7_constrain.ucf -p xc3s500e-fg320-5 seg7_decoder.ngc seg7_decoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o seg7_decoder_map.ncd seg7_decoder.ngd seg7_decoder.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_decoder_map.ncd seg7_decoder.ncd seg7_decoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seg7_decoder.twx seg7_decoder.ncd -o seg7_decoder.twr seg7_decoder.pcf -ucf seg7_constrain.ucf 
+bitgen -intstyle ise -f seg7_decoder.ut seg7_decoder.ncd 
+xst -intstyle ise -ifn "D:/VHDL/lab03/seg7_decoder.xst" -ofn "D:/VHDL/lab03/seg7_decoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seg7_constrain.ucf -p xc3s500e-fg320-5 seg7_decoder.ngc seg7_decoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o seg7_decoder_map.ncd seg7_decoder.ngd seg7_decoder.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_decoder_map.ncd seg7_decoder.ncd seg7_decoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seg7_decoder.twx seg7_decoder.ncd -o seg7_decoder.twr seg7_decoder.pcf -ucf seg7_constrain.ucf 
+bitgen -intstyle ise -f seg7_decoder.ut seg7_decoder.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seg7_constrain.ucf -p xc3s500e-fg320-5 seg7_decoder.ngc seg7_decoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o seg7_decoder_map.ncd seg7_decoder.ngd seg7_decoder.pcf 
+par -w -intstyle ise -ol high -t 1 seg7_decoder_map.ncd seg7_decoder.ncd seg7_decoder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seg7_decoder.twx seg7_decoder.ncd -o seg7_decoder.twr seg7_decoder.pcf -ucf seg7_constrain.ucf 
+bitgen -intstyle ise -f seg7_decoder.ut seg7_decoder.ncd 

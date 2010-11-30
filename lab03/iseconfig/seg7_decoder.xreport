@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2010-11-29T16:36:09</DateModified>
+  <DateModified>2010-11-30T11:32:45</DateModified>
   <ModuleName>seg7_decoder</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Documents and Settings/lab03/iseconfig/seg7_decoder.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Documents and Settings/lab03</ImplementationReportsDirectory>
+  <SavedFilePath>D:/VHDL/lab03/iseconfig/seg7_decoder.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/VHDL/lab03\</ImplementationReportsDirectory>
   <DateInitialized>2010-11-29T16:36:08</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

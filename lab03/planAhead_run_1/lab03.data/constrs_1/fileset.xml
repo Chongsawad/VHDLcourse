@@ -2,13 +2,7 @@
 <DARoots Version="1" Minor="7">
 	<FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
 		<Filter Type="Constrs"/>
-		<File Path="C:/Documents and Settings/lab03/seg7_constrain.ucf">
-		</File>
-		<File Path="$PDATADIR/constrs_1/designprops.xml">
-			<FileInfo SFType="CompatPartsDb"/>
-		</File>
-		<File Path="$PDATADIR/constrs_1/usercols.xml">
-			<FileInfo SFType="UserColsDb"/>
+		<File Path="D:/VHDL/lab03/seg7_constrain.ucf">
 		</File>
 		<Config>
 			<Option Name="TargetPart" Val="xc3s500efg320-5"/>

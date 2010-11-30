@@ -3,14 +3,14 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> Reading design: seg7_decoder.prj
 
@@ -104,9 +104,9 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Documents and Settings/lab02/lab02_pack.vhd" in Library work.
+Compiling vhdl file "D:/VHDL/lab02/lab02_pack.vhd" in Library work.
 Package <lab02_pack> compiled.
-Compiling vhdl file "C:/Documents and Settings/lab02/seg7_decoder.vhd" in Library work.
+Compiling vhdl file "D:/VHDL/lab02/seg7_decoder.vhd" in Library work.
 Entity <seg7_decoder> compiled.
 Entity <seg7_decoder> (Architecture <seg7_arch>) compiled.
 
@@ -130,7 +130,7 @@ Entity <seg7_decoder> analyzed. Unit <seg7_decoder> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <seg7_decoder>.
-    Related source file is "C:/Documents and Settings/lab02/seg7_decoder.vhd".
+    Related source file is "D:/VHDL/lab02/seg7_decoder.vhd".
     Found 16x8-bit ROM for signal <Seg7_out>.
     Summary:
 	inferred   1 ROM(s).
@@ -204,7 +204,7 @@ Design Statistics
 
 Cell Usage :
 # BELS                             : 8
-#      GND                         : 1
+#      LUT3                        : 1
 #      LUT4                        : 7
 # IO Buffers                       : 12
 #      IBUF                        : 4
@@ -217,7 +217,7 @@ Device utilization summary:
 Selected Device : 3s500efg320-5 
 
  Number of Slices:                        4  out of   4656     0%  
- Number of 4 input LUTs:                  7  out of   9312     0%  
+ Number of 4 input LUTs:                  8  out of   9312     0%  
  Number of IOs:                          12
  Number of bonded IOBs:                  12  out of    232     5%  
 
@@ -252,7 +252,7 @@ Speed Grade: -5
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 5.998ns
+   Maximum combinational path delay: 6.039ns
 
 Timing Detail:
 --------------
@@ -260,9 +260,9 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 28 / 7
+  Total number of paths / destination ports: 31 / 8
 -------------------------------------------------------------------------
-Delay:               5.998ns (Levels of Logic = 3)
+Delay:               6.039ns (Levels of Logic = 3)
   Source:            Bin_in<1> (PAD)
   Destination:       Seg7_out<7> (PAD)
 
@@ -270,22 +270,22 @@ Delay:               5.998ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             7   1.106   0.754  Bin_in_1_IBUF (Bin_in_1_IBUF)
-     LUT4:I0->O            1   0.612   0.357  Mrom_Seg7_out61 (Seg7_out_6_OBUF)
-     OBUF:I->O                 3.169          Seg7_out_6_OBUF (Seg7_out<6>)
+     IBUF:I->O             8   1.106   0.795  Bin_in_1_IBUF (Bin_in_1_IBUF)
+     LUT4:I0->O            1   0.612   0.357  Mrom_Seg7_out31 (Seg7_out_3_OBUF)
+     OBUF:I->O                 3.169          Seg7_out_3_OBUF (Seg7_out<3>)
     ----------------------------------------
-    Total                      5.998ns (4.887ns logic, 1.111ns route)
-                                       (81.5% logic, 18.5% route)
+    Total                      6.039ns (4.887ns logic, 1.152ns route)
+                                       (80.9% logic, 19.1% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.23 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.24 secs
  
 --> 
 
-Total memory usage is 132784 kilobytes
+Total memory usage is 186120 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

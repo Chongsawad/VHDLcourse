@@ -5,18 +5,18 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Mon Nov 29 16:26:06 2010">
+  <application stringID="Xst" timeStamp="Tue Nov 30 11:32:20 2010">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\12.3\ISE_DS\ISE\\lib\nt;C:\Xilinx\12.3\ISE_DS\ISE\\bin\nt;C:\Xilinx\12.3\ISE_DS\PlanAhead\bin;C:\Xilinx\12.3\ISE_DS\ISE\bin\nt;C:\Xilinx\12.3\ISE_DS\ISE\lib\nt;C:\Xilinx\12.3\ISE_DS\EDK\bin\nt;C:\Xilinx\12.3\ISE_DS\EDK\lib\nt;C:\Xilinx\12.3\ISE_DS\common\bin\nt;C:\Xilinx\12.3\ISE_DS\common\lib\nt;C:\app\Administrator\product\11.2.0\client_3\bin;C:\app\Administrator\product\11.2.0\client_2;C:\app\Administrator\product\11.2.0\client_1;C:\Program Files\Parallels\Parallels Tools\Applications;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem"/>
+          <item stringID="value" value="C:\Xilinx\12.3\ISE_DS\ISE\\lib\nt;C:\Xilinx\12.3\ISE_DS\ISE\\bin\nt;C:\Xilinx\12.3\ISE_DS\PlanAhead\bin;C:\Xilinx\12.3\ISE_DS\ISE\bin\nt;C:\Xilinx\12.3\ISE_DS\ISE\lib\nt;C:\Xilinx\12.3\ISE_DS\EDK\bin\nt;C:\Xilinx\12.3\ISE_DS\EDK\lib\nt;C:\Xilinx\12.3\ISE_DS\common\bin\nt;C:\Xilinx\12.3\ISE_DS\common\lib\nt;C:\Program Files\STMicroelectronics\st_toolset\asm;C:\app\UNKNOWN\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Nmap;C:\Program Files\COSMIC\CXSTM8_32K"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
-          <item stringID="value" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH"/>
+          <item stringID="value" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX"/>
@@ -36,16 +36,16 @@
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
-        <item stringID="User_EnvOsname" value="Microsoft Windows XP Professional"/>
-        <item stringID="User_EnvOsrelease" value="Service Pack 3  (build 2600)"/>
+        <item stringID="User_EnvOsname" value="Microsoft "/>
+        <item stringID="User_EnvOsrelease" value="major release  (build 7600)"/>
       </item>
-      <item stringID="User_EnvHost" value="saiaram"/>
+      <item stringID="User_EnvHost" value="SYSTEM"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM)2 Duo CPU     P8600  @ 2.40GHz"/>
-          <item stringID="speed" value="2401 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM)2 CPU         T5600  @ 1.83GHz"/>
+          <item stringID="speed" value="1833 MHz"/>
         </row>
       </table>
     </section>
@@ -130,7 +130,7 @@
       </section>
       <section stringID="XST_CELL_USAGE">
         <item dataType="int" stringID="XST_BELS" value="8">
-          <item dataType="int" stringID="XST_GND" value="1"/>
+          <item dataType="int" stringID="XST_LUT3" value="1"/>
           <item dataType="int" stringID="XST_LUT4" value="7"/>
         </item>
         <item dataType="int" stringID="XST_IO_BUFFERS" value="12">
@@ -142,7 +142,7 @@
     <section stringID="XST_DEVICE_UTILIZATION_SUMMARY">
       <item stringID="XST_SELECTED_DEVICE" value="3s500efg320-5"/>
       <item AVAILABLE="4656" dataType="int" label="Number of Slices" stringID="XST_NUMBER_OF_SLICES" value="4"/>
-      <item AVAILABLE="9312" dataType="int" label="Number of 4 input LUTs" stringID="XST_NUMBER_OF_4_INPUT_LUTS" value="7"/>
+      <item AVAILABLE="9312" dataType="int" label="Number of 4 input LUTs" stringID="XST_NUMBER_OF_4_INPUT_LUTS" value="8"/>
       <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="12"/>
       <item AVAILABLE="232" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="12"/>
     </section>

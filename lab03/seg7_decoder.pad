@@ -1,7 +1,7 @@
 Release 12.3 - par M.70d (nt)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
-Mon Nov 29 16:56:53 2010
+Tue Nov 30 11:37:22 2010
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -22,12 +22,12 @@ Pin Number|Signal Name|Pin Usage|Pin Name|Direction|IO Standard|IO Bank Number|D
 A1|||GND||||||||||||
 A2|||TDI||||||||||||
 A3||IBUF|IP|UNUSED||0|||||||||
-A4|Seg7_out<5>|IOB|IO_L24P_0|OUTPUT|LVCMOS25*|0|12|SLOW|NONE**|||LOCATED|NO|NONE|
+A4||DIFFM|IO_L24P_0|UNUSED||0|||||||||
 A5||DIFFMI|IP_L22P_0|UNUSED||0|||||||||
 A6||DIFFS|IO_L20N_0|UNUSED||0|||||||||
 A7||IBUF|IP|UNUSED||0|||||||||
 A8||IOB|IO|UNUSED||0|||||||||
-A9|||VCCO_0|||0|||||2.50||||
+A9|||VCCO_0|||0|||||any******||||
 A10||DIFFS|IO_L12N_0/GCLK7|UNUSED||0|||||||||
 A11||IOB|IO|UNUSED||0|||||||||
 A12|||NC||||||||||||
@@ -60,14 +60,14 @@ C2||DIFFS|IO_L01N_3|UNUSED||3|||||||||
 C3||DIFFM|IO_L25P_0|UNUSED||0|||||||||
 C4||IOB|IO|UNUSED||0|||||||||
 C5||DIFFM|IO_L23P_0|UNUSED||0|||||||||
-C6|||VCCO_0|||0|||||2.50||||
+C6|||VCCO_0|||0|||||any******||||
 C7||DIFFM|IO_L18P_0|UNUSED||0|||||||||
 C8||DIFFMI|IP_L16P_0|UNUSED||0|||||||||
 C9||DIFFM|IO_L14P_0/GCLK10|UNUSED||0|||||||||
 C10|||GND||||||||||||
 C11||DIFFM|IO_L09P_0|UNUSED||0|||||||||
 C12||DIFFMI|IP_L07P_0|UNUSED||0|||||||||
-C13|||VCCO_0|||0|||||2.50||||
+C13|||VCCO_0|||0|||||any******||||
 C14||DIFFS|IO_L03N_0/VREF_0|UNUSED||0|||||||||
 C15||IBUF|IP|UNUSED||0|||||||||
 C16|||TDO||||||||||||
@@ -89,7 +89,7 @@ D13||IBUF|IP|UNUSED||0|||||||||
 D14||DIFFM|IO_L03P_0|UNUSED||0|||||||||
 D15|||TMS||||||||||||
 D16|Seg7_out<4>|IOB|IO_L23N_1/LDC0|OUTPUT|LVCMOS25*|1|12|SLOW|NONE**|||LOCATED|NO|NONE|
-D17||DIFFM|IO_L23P_1/HDC|UNUSED||1|||||||||
+D17|Seg7_out<5>|IOB|IO_L23P_1/HDC|OUTPUT|LVCMOS25*|1|12|SLOW|NONE**|||LOCATED|NO|NONE|
 D18||IBUF|IP/VREF_1|UNUSED||1|||||||||
 E1||DIFFS|IO_L03N_3|UNUSED||3|||||||||
 E2||DIFFM|IO_L03P_3|UNUSED||3|||||||||
@@ -134,10 +134,10 @@ G4||DIFFS|IO_L06N_3/VREF_3|UNUSED||3|||||||||
 G5||DIFFS|IO_L07N_3|UNUSED||3|||||||||
 G6||DIFFM|IO_L07P_3|UNUSED||3|||||||||
 G7|||GND||||||||||||
-G8|||VCCO_0|||0|||||2.50||||
+G8|||VCCO_0|||0|||||any******||||
 G9||IOB|IO|UNUSED||0|||||||||
 G10||DIFFSI|IP_L10N_0|UNUSED||0|||||||||
-G11|||VCCO_0|||0|||||2.50||||
+G11|||VCCO_0|||0|||||any******||||
 G12|||GND||||||||||||
 G13||DIFFS|IO_L20N_1|UNUSED||1|||||||||
 G14|Seg7_out<3>|IOB|IO_L20P_1|OUTPUT|LVCMOS25*|1|12|SLOW|NONE**|||LOCATED|NO|NONE|
@@ -148,7 +148,7 @@ G18|Bin_in<0>|IBUF|IP|INPUT|LVCMOS25*|1||||NONE||LOCATED|NO|NONE|
 H1||DIFFS|IO_L10N_3|UNUSED||3|||||||||
 H2||DIFFM|IO_L10P_3|UNUSED||3|||||||||
 H3||DIFFS|IO_L09N_3|UNUSED||3|||||||||
-H4||DIFFM|IO_L09P_3|UNUSED||3||||||PROHIBITED|||
+H4||DIFFM|IO_L09P_3|UNUSED||3|||||||||
 H5||DIFFS|IO_L08N_3|UNUSED||3|||||||||
 H6||DIFFM|IO_L08P_3|UNUSED||3|||||||||
 H7|||VCCO_3|||3|||||any******||||

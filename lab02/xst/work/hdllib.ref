@@ -1,4 +1,4 @@
-PH lab02_pack NULL "C:/Documents and Settings/lab02/lab02_pack.vhd" sub00/vhpl01 1291022777
+PH lab02_pack NULL D:/VHDL/lab02/lab02_pack.vhd sub00/vhpl01 1291091541
 AR seg7_decoder behavioral "C:/Documents and Settings/lab02/seg7_decoder.vhd" sub00/vhpl02 1291021832
-AR seg7_decoder seg7_arch "C:/Documents and Settings/lab02/seg7_decoder.vhd" sub00/vhpl03 1291022779
-EN seg7_decoder NULL "C:/Documents and Settings/lab02/seg7_decoder.vhd" sub00/vhpl00 1291022778
+AR seg7_decoder seg7_arch D:/VHDL/lab02/seg7_decoder.vhd sub00/vhpl03 1291091543
+EN seg7_decoder NULL D:/VHDL/lab02/seg7_decoder.vhd sub00/vhpl00 1291091542

@@ -1,3 +1,5 @@
 xst -intstyle ise -ifn "C:/Documents and Settings/lab02/seg7_decoder.xst" -ofn "C:/Documents and Settings/lab02/seg7_decoder.syr" 
 xst -intstyle ise -ifn "C:/Documents and Settings/lab02/seg7_decoder.xst" -ofn "C:/Documents and Settings/lab02/seg7_decoder.syr" 
 netgen -intstyle ise -ar Structure -tm seg7_decoder -w -dir netgen/synthesis -ofmt vhdl -sim seg7_decoder.ngc seg7_decoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/VHDL/lab02/seg7_decoder.xst" -ofn "D:/VHDL/lab02/seg7_decoder.syr" 
+xst -intstyle ise -ifn "D:/VHDL/lab02/seg7_decoder.xst" -ofn "D:/VHDL/lab02/seg7_decoder.syr" 

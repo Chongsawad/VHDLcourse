@@ -22,6 +22,7 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="lab03.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -53,6 +54,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="seg7_decoder.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="seg7_decoder.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="seg7_decoder.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="seg7_decoder_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="seg7_decoder_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="seg7_decoder_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="seg7_decoder_map.mrp" xil_pn:subbranch="Map"/>
@@ -78,6 +80,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1291023415" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1291023415">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1291023415" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3626701211782155418" xil_pn:start_ts="1291023415">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -103,11 +106,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1291023420" xil_pn:in_ck="-2960902319540981616" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="961730686328644222" xil_pn:start_ts="1291023415">
+    <transform xil_pn:end_ts="1291091600" xil_pn:in_ck="-2960902319540981616" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="961730686328644222" xil_pn:start_ts="1291091594">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="seg7_decoder.lso"/>
       <outfile xil_pn:name="seg7_decoder.ngc"/>
@@ -121,11 +125,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1291024596" xil_pn:in_ck="-2573491523896778446" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7571971871055820903" xil_pn:start_ts="1291024596">
+    <transform xil_pn:end_ts="1291091819" xil_pn:in_ck="-2573491523896778446" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7571971871055820903" xil_pn:start_ts="1291091819">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1291024600" xil_pn:in_ck="2515486121962999715" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7087375180801042778" xil_pn:start_ts="1291024596">
+    <transform xil_pn:end_ts="1291091824" xil_pn:in_ck="2515486121962999715" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7087375180801042778" xil_pn:start_ts="1291091819">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -134,7 +138,7 @@
       <outfile xil_pn:name="seg7_decoder.ngd"/>
       <outfile xil_pn:name="seg7_decoder_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1291024603" xil_pn:in_ck="2515486121962999716" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1291024600">
+    <transform xil_pn:end_ts="1291091829" xil_pn:in_ck="2515486121962999716" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1291091824">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -147,7 +151,7 @@
       <outfile xil_pn:name="seg7_decoder_summary.xml"/>
       <outfile xil_pn:name="seg7_decoder_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1291024616" xil_pn:in_ck="-2740865591888604995" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1291024603">
+    <transform xil_pn:end_ts="1291091847" xil_pn:in_ck="-2740865591888604995" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1291091829">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -161,7 +165,7 @@
       <outfile xil_pn:name="seg7_decoder_pad.txt"/>
       <outfile xil_pn:name="seg7_decoder_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1291024803" xil_pn:in_ck="-9029883076595938834" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="5775731546441462550" xil_pn:start_ts="1291024792">
+    <transform xil_pn:end_ts="1291091865" xil_pn:in_ck="-9029883076595938834" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="5775731546441462550" xil_pn:start_ts="1291091852">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -173,7 +177,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1291024616" xil_pn:in_ck="2515486121962999584" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1291024614">
+    <transform xil_pn:end_ts="1291091847" xil_pn:in_ck="2515486121962999584" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1291091843">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

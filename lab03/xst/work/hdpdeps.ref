@@ -1,10 +1,11 @@
-V3 5
+V3 7
 FL "C:/Documents and Settings/lab02/lab02_pack.vhd" 2010/11/29.16:25:59 M.70d
-PH work/lab02_pack 1291023418 FL "C:/Documents and Settings/lab02/lab02_pack.vhd" \
-      PB ieee/std_logic_1164 1284609568
 FL "C:/Documents and Settings/lab02/seg7_decoder.vhd" 2010/11/29.16:25:10 M.70d
-EN work/seg7_decoder 1291023419 \
-      FL "C:/Documents and Settings/lab02/seg7_decoder.vhd" \
-      PB ieee/std_logic_1164 1284609568 PH work/lab02_pack 1291023418
-AR work/seg7_decoder/seg7_arch 1291023420 \
-      FL "C:/Documents and Settings/lab02/seg7_decoder.vhd" EN work/seg7_decoder 1291023419
+FL D:/VHDL/lab02/lab02_pack.vhd 2010/11/30.11:31:30 M.70d
+PH work/lab02_pack 1291091603 FL D:/VHDL/lab02/lab02_pack.vhd \
+      PB ieee/std_logic_1164 1284609568
+FL D:/VHDL/lab02/seg7_decoder.vhd 2010/11/30.11:32:12 M.70d
+EN work/seg7_decoder 1291091604 FL D:/VHDL/lab02/seg7_decoder.vhd \
+      PB ieee/std_logic_1164 1284609568 PH work/lab02_pack 1291091603
+AR work/seg7_decoder/seg7_arch 1291091605 \
+      FL D:/VHDL/lab02/seg7_decoder.vhd EN work/seg7_decoder 1291091604
