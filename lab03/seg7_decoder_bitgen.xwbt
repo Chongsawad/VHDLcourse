@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Documents and Settings\lab03\seg7_decoder.ncd
+OUTFILE=C:\Documents and Settings\lab03\seg7_decoder.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=C:\Documents and Settings\lab03
+LICENSE=WebPack
+USER_INFO=0_0_918

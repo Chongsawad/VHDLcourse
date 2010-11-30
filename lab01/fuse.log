@@ -1,0 +1,20 @@
+Running: C:\Xilinx\12.3\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Documents and Settings/lab01/tb_mux2_isim_beh.exe -prj C:/Documents and Settings/lab01/tb_mux2_beh.prj work.tb_mux2 
+ISim M.70d (signature 0x36e8438f)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Documents and Settings/lab01/mux2.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/lab01/tb_mux2.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 58696 KB
+Fuse CPU Usage: 202 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Compiling architecture mux of entity mux2 [mux2_default]
+Compiling architecture behavior of entity tb_mux2
+Time Resolution for simulation is 1ps.
+Compiled 5 VHDL Units
+Built simulation executable C:/Documents and Settings/lab01/tb_mux2_isim_beh.exe
+Fuse Memory Usage: 64332 KB
+Fuse CPU Usage: 218 ms

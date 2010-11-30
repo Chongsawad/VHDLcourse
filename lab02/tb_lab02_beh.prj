@@ -1,0 +1,3 @@
+vhdl work "lab02_pack.vhd"
+vhdl work "seg7_decoder.vhd"
+vhdl work "tb_lab02.vhd"

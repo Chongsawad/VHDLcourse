@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# PlanAhead v12.3
+# Build 101344 by hdbuild on Sat Sep  4 00:26:34 MDT 2010
+# Start of session at: Mon Nov 29 16:44:08 2010
+# Process ID: 3220
+# Log file: C:/Documents and Settings/lab03/planAhead_run_1/planAhead.log
+# Journal file: C:/Documents and Settings/lab03/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui -source {C:/Documents and Settings/lab03/pa.fromNetlist.tcl}
+# create_project -name lab03 -dir "C:/Documents and Settings/lab03/planAhead_run_1" -part xc3s500efg320-5
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Documents and Settings/lab03/seg7_decoder.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Documents and Settings/lab03} }
+# set_param project.paUcfFile  "seg7_constrain.ucf"
+# add_files "seg7_constrain.ucf" -fileset [get_property constrset [current_run]]
+# open_netlist_design
+set_property prohibit 1 [get_sites PAD213]
+set_property loc "" [get_ports {Bin_in[0]}]
+startgroup
+set_property loc PAD57 [get_ports {Bin_in[1]}]
+set_property is_fixed true  [get_ports {Bin_in[1]}]
+endgroup
+set_property loc "" [get_ports {Bin_in[2]}]
+startgroup
+set_property loc PAD57 [get_ports {Bin_in[1]}]
+set_property is_fixed true  [get_ports {Bin_in[1]}]
+endgroup
+startgroup
+set_property loc PAD57 [get_ports {Bin_in[1]}]
+set_property is_fixed true  [get_ports {Bin_in[1]}]
+endgroup
+startgroup
+set_property loc IPAD55 [get_ports {Bin_in[2]}]
+set_property is_fixed true  [get_ports {Bin_in[2]}]
+endgroup
+set_property loc "" [get_ports {Bin_in[1]}]
+set_property loc "" [get_ports {Bin_in[2]}]
+set_property loc "" [get_ports {Bin_in[0]}]
+startgroup
+set_property loc IPAD78 [get_ports {Bin_in[0]}]
+set_property is_fixed true  [get_ports {Bin_in[0]}]
+endgroup
+startgroup
+set_property loc IPAD83 [get_ports {Bin_in[1]}]
+set_property is_fixed true  [get_ports {Bin_in[1]}]
+endgroup
+startgroup
+set_property loc IPAD88 [get_ports {Bin_in[2]}]
+set_property is_fixed true  [get_ports {Bin_in[2]}]
+endgroup
+startgroup
+set_property loc IPAD93 [get_ports {Bin_in[3]}]
+set_property is_fixed true  [get_ports {Bin_in[3]}]
+endgroup
+startgroup
+set_property loc PAD60 [get_ports {Seg7_out[0]}]
+set_property is_fixed true  [get_ports {Seg7_out[0]}]
+endgroup
+startgroup
+set_property loc PAD77 [get_ports {Seg7_out[1]}]
+set_property is_fixed true  [get_ports {Seg7_out[1]}]
+endgroup
+startgroup
+set_property loc PAD87 [get_ports {Seg7_out[2]}]
+set_property is_fixed true  [get_ports {Seg7_out[2]}]
+endgroup
+startgroup
+set_property loc PAD70 [get_ports {Seg7_out[3]}]
+set_property is_fixed true  [get_ports {Seg7_out[3]}]
+endgroup
+startgroup
+set_property loc PAD62 [get_ports {Seg7_out[4]}]
+set_property is_fixed true  [get_ports {Seg7_out[4]}]
+endgroup
+startgroup
+set_property loc PAD63 [get_ports {Seg7_out[5]}]
+set_property is_fixed true  [get_ports {Seg7_out[5]}]
+endgroup
+startgroup
+set_property loc PAD63 [get_ports {Seg7_out[5]}]
+set_property is_fixed true  [get_ports {Seg7_out[5]}]
+endgroup
+startgroup
+set_property loc PAD5 [get_ports {Seg7_out[5]}]
+set_property is_fixed true  [get_ports {Seg7_out[5]}]
+endgroup
+startgroup
+set_property loc PAD72 [get_ports {Seg7_out[6]}]
+set_property is_fixed true  [get_ports {Seg7_out[6]}]
+endgroup
+startgroup
+set_property loc PAD95 [get_ports {Seg7_out[7]}]
+set_property is_fixed true  [get_ports {Seg7_out[7]}]
+endgroup
+save_design
+exit

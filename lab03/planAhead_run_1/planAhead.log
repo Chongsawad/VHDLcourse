@@ -1,0 +1,137 @@
+#-----------------------------------------------------------
+# PlanAhead v12.3
+# Build 101344 by hdbuild on Sat Sep  4 00:26:34 MDT 2010
+# Start of session at: Mon Nov 29 16:44:08 2010
+# Process ID: 3220
+# Log file: C:/Documents and Settings/lab03/planAhead_run_1/planAhead.log
+# Journal file: C:/Documents and Settings/lab03/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [HD-Licensing 0] Attempting to get a license: PlanAhead
+INFO: [HD-Licensing 1] Got a license: PlanAhead
+INFO: [HD-ArchReader 0] Loading parts and site information from C:\Xilinx\12.3\ISE_DS\PlanAhead\parts\arch.xml
+INFO: [HD-RTPRIM 0] Parsing RTL primitives file 'C:\Xilinx\12.3\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml'
+INFO: [HD-RTPRIM 1] Finished Parsing RTL primitives file 'C:\Xilinx\12.3\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml'
+start_gui -source {C:/Documents and Settings/lab03/pa.fromNetlist.tcl}
+# create_project -name lab03 -dir "C:/Documents and Settings/lab03/planAhead_run_1" -part xc3s500efg320-5
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Documents and Settings/lab03/seg7_decoder.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Documents and Settings/lab03} }
+# set_param project.paUcfFile  "seg7_constrain.ucf"
+# add_files "seg7_constrain.ucf" -fileset [get_property constrset [current_run]]
+# open_netlist_design
+INFO: Run is defaulting to constrset part: xc3s500efg320-5
+INFO: [HD-EDIFIN 0] Parsing Edif File '.\.HDI-PlanAhead-3220-saiaram\ngc2edif\seg7_decoder.edif'
+INFO: [HD-EDIFIN 1] Finished Parsing Edif File '.\.HDI-PlanAhead-3220-saiaram\ngc2edif\seg7_decoder.edif'
+INFO: [HD-ArchReader 18] Reading macro library C:/Xilinx/12.3/ISE_DS/PlanAhead/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+INFO: [HD-EDIFIN 0] Parsing Edif File 'C:/Xilinx/12.3/ISE_DS/PlanAhead/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn'
+INFO: [HD-EDIFIN 1] Finished Parsing Edif File 'C:/Xilinx/12.3/ISE_DS/PlanAhead/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn'
+INFO: [HD-ArchReader 7] Loading clock regions from C:/Xilinx/12.3/ISE_DS/PlanAhead/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+INFO: [HD-ArchReader 8] Loading clock buffers from C:/Xilinx/12.3/ISE_DS/PlanAhead/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+INFO: [HD-ArchReader 3] Loading package from C:/Xilinx/12.3/ISE_DS/PlanAhead/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+INFO: [HD-ArchReader 4] Loading io standards from C:/Xilinx/12.3/ISE_DS/PlanAhead/./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [HD-ArchReader 5] Loading pkg sso from C:/Xilinx/12.3/ISE_DS/PlanAhead/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+INFO: [HD-GDRC 0] Loading list of drcs for the architecture : C:/Xilinx/12.3/ISE_DS/PlanAhead/./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [HD-UCFReader 0] Parsing UCF File : .\seg7_constrain.ucf
+INFO: [HD-UCFReader 1] Finished Parsing UCF File : .\seg7_constrain.ucf
+
+DESIGN RULE CHECK VIOLATION REPORT
+   Build: PlanAhead v12.3 by hdbuild
+          on  Sat Sep  4 00:26:34 MDT 2010
+  Report: by Administrator on host saiaram, pid 3220
+          on Mon Nov 29 16:44:55 2010
+
+REPORT SUMMARY
+            Netlist: netlist
+          Floorplan: <none>
+      Design limits: <entire design considered>
+             Checks: Unknown block name
+                     Unknown Unisim pin name
+                     Mismatching Attribute
+           Max vios: <unlimited>
+         Vios found: 0
+
+REPORT DETAILS
+INFO: [HD-LIB 0] Reading timing library C:/Xilinx/12.3/ISE_DS/PlanAhead/parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib .
+INFO: [HD-LIB 1] Done reading timing library C:/Xilinx/12.3/ISE_DS/PlanAhead/parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib .
+set_property prohibit 1 [get_sites PAD213]
+set_property loc "" [get_ports {Bin_in[0]}]
+startgroup
+set_property loc PAD57 [get_ports {Bin_in[1]}]
+set_property is_fixed true  [get_ports {Bin_in[1]}]
+endgroup
+set_property loc "" [get_ports {Bin_in[2]}]
+startgroup
+set_property loc PAD57 [get_ports {Bin_in[1]}]
+set_property is_fixed true  [get_ports {Bin_in[1]}]
+endgroup
+startgroup
+set_property loc PAD57 [get_ports {Bin_in[1]}]
+set_property is_fixed true  [get_ports {Bin_in[1]}]
+endgroup
+startgroup
+set_property loc IPAD55 [get_ports {Bin_in[2]}]
+set_property is_fixed true  [get_ports {Bin_in[2]}]
+endgroup
+set_property loc "" [get_ports {Bin_in[1]}]
+set_property loc "" [get_ports {Bin_in[2]}]
+set_property loc "" [get_ports {Bin_in[0]}]
+startgroup
+set_property loc IPAD78 [get_ports {Bin_in[0]}]
+set_property is_fixed true  [get_ports {Bin_in[0]}]
+endgroup
+startgroup
+set_property loc IPAD83 [get_ports {Bin_in[1]}]
+set_property is_fixed true  [get_ports {Bin_in[1]}]
+endgroup
+startgroup
+set_property loc IPAD88 [get_ports {Bin_in[2]}]
+set_property is_fixed true  [get_ports {Bin_in[2]}]
+endgroup
+startgroup
+set_property loc IPAD93 [get_ports {Bin_in[3]}]
+set_property is_fixed true  [get_ports {Bin_in[3]}]
+endgroup
+startgroup
+set_property loc PAD60 [get_ports {Seg7_out[0]}]
+set_property is_fixed true  [get_ports {Seg7_out[0]}]
+endgroup
+startgroup
+set_property loc PAD77 [get_ports {Seg7_out[1]}]
+set_property is_fixed true  [get_ports {Seg7_out[1]}]
+endgroup
+startgroup
+set_property loc PAD87 [get_ports {Seg7_out[2]}]
+set_property is_fixed true  [get_ports {Seg7_out[2]}]
+endgroup
+startgroup
+set_property loc PAD70 [get_ports {Seg7_out[3]}]
+set_property is_fixed true  [get_ports {Seg7_out[3]}]
+endgroup
+startgroup
+set_property loc PAD62 [get_ports {Seg7_out[4]}]
+set_property is_fixed true  [get_ports {Seg7_out[4]}]
+endgroup
+startgroup
+set_property loc PAD63 [get_ports {Seg7_out[5]}]
+set_property is_fixed true  [get_ports {Seg7_out[5]}]
+endgroup
+startgroup
+set_property loc PAD63 [get_ports {Seg7_out[5]}]
+set_property is_fixed true  [get_ports {Seg7_out[5]}]
+endgroup
+startgroup
+set_property loc PAD5 [get_ports {Seg7_out[5]}]
+set_property is_fixed true  [get_ports {Seg7_out[5]}]
+endgroup
+startgroup
+set_property loc PAD72 [get_ports {Seg7_out[6]}]
+set_property is_fixed true  [get_ports {Seg7_out[6]}]
+endgroup
+startgroup
+set_property loc PAD95 [get_ports {Seg7_out[7]}]
+set_property is_fixed true  [get_ports {Seg7_out[7]}]
+endgroup
+save_design
+exit
+INFO: [HD-Application 0] Exiting PlanAhead...
+INFO: [HD-Licensing 2] Releasing license: PlanAhead

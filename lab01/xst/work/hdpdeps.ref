@@ -1,0 +1,6 @@
+V3 3
+FL "C:/Documents and Settings/lab01/mux2.vhd" 2010/11/29.15:17:07 M.70d
+EN work/mux2 1291018630 FL "C:/Documents and Settings/lab01/mux2.vhd" \
+      PB ieee/std_logic_1164 1284609568
+AR work/mux2/mux 1291018631 \
+      FL "C:/Documents and Settings/lab01/mux2.vhd" EN work/mux2 1291018630

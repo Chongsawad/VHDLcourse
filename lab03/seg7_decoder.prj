@@ -1,0 +1,2 @@
+vhdl work "../lab02/lab02_pack.vhd"
+vhdl work "../lab02/seg7_decoder.vhd"

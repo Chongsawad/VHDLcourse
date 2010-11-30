@@ -1,0 +1,22 @@
+Running: C:\Xilinx\12.3\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Documents and Settings/lab02/tb_lab02_isim_beh.exe -prj C:/Documents and Settings/lab02/tb_lab02_beh.prj work.tb_lab02 
+ISim M.70d (signature 0x36e8438f)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Documents and Settings/lab02/lab02_pack.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/lab02/seg7_decoder.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/lab02/tb_lab02.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 58696 KB
+Fuse CPU Usage: 202 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Compiling package lab02_pack
+Compiling architecture seg7_arch of entity seg7_decoder [seg7_decoder_default]
+Compiling architecture behavior of entity tb_lab02
+Time Resolution for simulation is 1ps.
+Compiled 6 VHDL Units
+Built simulation executable C:/Documents and Settings/lab02/tb_lab02_isim_beh.exe
+Fuse Memory Usage: 66508 KB
+Fuse CPU Usage: 218 ms
