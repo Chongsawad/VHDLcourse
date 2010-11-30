@@ -1,0 +1,10 @@
+Command line:
+   tb_seg7_scan_delay_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  7259
+
+Tue Nov 30 15:16:49 2010
+
+
+ Elaboration Time: 0.0468 sec

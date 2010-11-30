@@ -1,0 +1,21 @@
+Running: C:\Xilinx\12.3\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o D:/VHDL/lab05/tb_seg7_scan_delay_isim_beh.exe -prj D:/VHDL/lab05/tb_seg7_scan_delay_beh.prj work.tb_seg7_scan_delay 
+ISim M.70d (signature 0x36e8438f)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/VHDL/lab05/tb_seg7_scan_delay.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:89 - "D:/VHDL/lab05/tb_seg7_scan_delay.vhd" Line 73: <seg7_3digit> remains a black-box since it has no binding entity.
+Completed static elaboration
+Fuse Memory Usage: 95024 KB
+Fuse CPU Usage: 249 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+WARNING:Simulator:648 - "D:/VHDL/lab05/tb_seg7_scan_delay.vhd" Line 73. Instance seg7_3digit is unbound
+Compiling architecture behavior of entity tb_seg7_scan_delay
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 VHDL Units
+Built simulation executable D:/VHDL/lab05/tb_seg7_scan_delay_isim_beh.exe
+Fuse Memory Usage: 101788 KB
+Fuse CPU Usage: 264 ms

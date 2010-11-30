@@ -42,7 +42,9 @@ architecture Behavioral of seg7_3digit is
 	signal scan_en	:	std_logic;
 	signal delay_cnt	:	integer range 0 to 10000;
 	signal digit_cnt	:	integer range 0 to 3;
-	signal digit_scan	:	std_logic_vector (2 downto 0);
+	
+	type REG_ARR is array(2 downto 0) of std_logic_vector(3 downto 0);
+	signal din_reg	:	reg_arr;  
 begin
 	-- Scan Delay --
 	process(clk, rst)
@@ -83,6 +85,12 @@ begin
 				end case;
 			end if;
 		end if;
+	end process;
+	
+	-- Din Reg --
+	process(clk, rst)
+	begin
+		
 	end process;
 end Behavioral;
 
