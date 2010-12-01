@@ -63,7 +63,7 @@ architecture Behavioral of uart_lab is
 	
 	component receiver
 		generic(	Bconst : natural := 5208;
-					Bconst_div2 : natural := 5208 );
+					Bconst_div2 : natural := 5208/2 );
 		port(	clk   : in std_logic;
 				rst   : in std_logic;
 				RxD   : in std_logic;

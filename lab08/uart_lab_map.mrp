@@ -3,28 +3,28 @@ Xilinx Mapping Report File for Design 'uart_lab'
 
 Design Information
 ------------------
-Command Line   : map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off
+Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off
 -c 100 -o uart_lab_map.ncd uart_lab.ngd uart_lab.pcf 
 Target Device  : xc3s500e
 Target Package : fg320
-Target Speed   : -5
+Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.52 $
-Mapped Date    : Wed Dec 01 14:17:02 2010
+Mapped Date    : Wed Dec 01 14:35:40 2010
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:           107 out of   9,312    1%
-  Number of 4 input LUTs:               158 out of   9,312    1%
+  Number of Slice Flip Flops:           108 out of   9,312    1%
+  Number of 4 input LUTs:               163 out of   9,312    1%
 Logic Distribution:
-  Number of occupied Slices:            122 out of   4,656    2%
-    Number of Slices containing only related logic:     122 out of     122 100%
-    Number of Slices containing unrelated logic:          0 out of     122   0%
+  Number of occupied Slices:            123 out of   4,656    2%
+    Number of Slices containing only related logic:     123 out of     123 100%
+    Number of Slices containing unrelated logic:          0 out of     123   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         214 out of   9,312    2%
-    Number used as logic:               158
+  Total Number of 4 input LUTs:         219 out of   9,312    2%
+    Number used as logic:               163
     Number used as a route-thru:         56
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -35,7 +35,7 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                2.90
 
-Peak Memory Usage:  178 MB
+Peak Memory Usage:  179 MB
 Total REAL time to MAP completion:  2 secs 
 Total CPU time to MAP completion:   2 secs 
 

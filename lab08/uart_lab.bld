@@ -2,7 +2,7 @@ Release 12.3 ngdbuild M.70d (nt)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 Command Line: C:\Xilinx\12.3\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
-ise -dd _ngo -nt timestamp -uc uart_pm.ucf -p xc3s500e-fg320-5 uart_lab.ngc
+ise -dd _ngo -nt timestamp -uc uart_pm.ucf -p xc3s500e-fg320-4 uart_lab.ngc
 uart_lab.ngd
 
 Reading NGO file "D:/VHDL/lab08/uart_lab.ngc" ...
@@ -27,7 +27,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 103728 kilobytes
+Total memory usage is 103216 kilobytes
 
 Writing NGD file "uart_lab.ngd" ...
 Total REAL time to NGDBUILD completion:  3 sec

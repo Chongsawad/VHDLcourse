@@ -2,13 +2,13 @@
 Release 12.3 Trace  (nt)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\12.3\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+C:\Xilinx\12.3\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
 3 -fastpaths -xml uart_lab.twx uart_lab.ncd -o uart_lab.twr uart_lab.pcf -ucf
 uart_pm.ucf
 
 Design file:              uart_lab.ncd
 Physical constraint file: uart_lab.pcf
-Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2010-09-15)
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2010-09-15)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -44,17 +44,17 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-RxD         |    3.001(R)|    0.462(R)|clk_BUFGP         |   0.000|
-data_in<0>  |    1.682(R)|   -0.223(R)|clk_BUFGP         |   0.000|
-data_in<1>  |    1.477(R)|   -0.059(R)|clk_BUFGP         |   0.000|
-data_in<2>  |    0.954(R)|    0.359(R)|clk_BUFGP         |   0.000|
-data_in<3>  |    0.522(R)|    0.714(R)|clk_BUFGP         |   0.000|
-data_in<4>  |    1.146(R)|    0.199(R)|clk_BUFGP         |   0.000|
-data_in<5>  |    0.868(R)|    0.428(R)|clk_BUFGP         |   0.000|
-data_in<6>  |    0.707(R)|    0.555(R)|clk_BUFGP         |   0.000|
-data_in<7>  |    1.236(R)|    0.132(R)|clk_BUFGP         |   0.000|
-rst         |    1.359(R)|    0.336(R)|clk_BUFGP         |   0.000|
-we_n        |    4.878(R)|   -0.940(R)|clk_BUFGP         |   0.000|
+RxD         |    3.681(R)|    0.142(R)|clk_BUFGP         |   0.000|
+data_in<0>  |    1.893(R)|   -0.309(R)|clk_BUFGP         |   0.000|
+data_in<1>  |    1.407(R)|    0.082(R)|clk_BUFGP         |   0.000|
+data_in<2>  |    1.265(R)|    0.194(R)|clk_BUFGP         |   0.000|
+data_in<3>  |    1.135(R)|    0.298(R)|clk_BUFGP         |   0.000|
+data_in<4>  |    1.106(R)|    0.320(R)|clk_BUFGP         |   0.000|
+data_in<5>  |    0.911(R)|    0.477(R)|clk_BUFGP         |   0.000|
+data_in<6>  |    1.312(R)|    0.155(R)|clk_BUFGP         |   0.000|
+data_in<7>  |    1.967(R)|   -0.368(R)|clk_BUFGP         |   0.000|
+rst         |    1.721(R)|    1.456(R)|clk_BUFGP         |   0.000|
+we_n        |    4.767(R)|   -0.171(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -62,18 +62,18 @@ Clock clk to Pad
              | clk (edge) |                  | Clock  |
 Destination  |   to PAD   |Internal Clock(s) | Phase  |
 -------------+------------+------------------+--------+
-TxD          |    8.574(R)|clk_BUFGP         |   0.000|
-digit_scan<0>|    7.844(R)|clk_BUFGP         |   0.000|
-digit_scan<1>|    7.419(R)|clk_BUFGP         |   0.000|
-int_Rx       |    7.622(R)|clk_BUFGP         |   0.000|
-int_Tx       |    7.363(R)|clk_BUFGP         |   0.000|
-seg7_out<1>  |   10.968(R)|clk_BUFGP         |   0.000|
-seg7_out<2>  |   11.559(R)|clk_BUFGP         |   0.000|
-seg7_out<3>  |   11.240(R)|clk_BUFGP         |   0.000|
-seg7_out<4>  |   12.064(R)|clk_BUFGP         |   0.000|
-seg7_out<5>  |   11.767(R)|clk_BUFGP         |   0.000|
-seg7_out<6>  |   11.262(R)|clk_BUFGP         |   0.000|
-seg7_out<7>  |   12.570(R)|clk_BUFGP         |   0.000|
+TxD          |    9.618(R)|clk_BUFGP         |   0.000|
+digit_scan<0>|    7.957(R)|clk_BUFGP         |   0.000|
+digit_scan<1>|    8.468(R)|clk_BUFGP         |   0.000|
+int_Rx       |    7.981(R)|clk_BUFGP         |   0.000|
+int_Tx       |    7.469(R)|clk_BUFGP         |   0.000|
+seg7_out<1>  |   11.806(R)|clk_BUFGP         |   0.000|
+seg7_out<2>  |   11.734(R)|clk_BUFGP         |   0.000|
+seg7_out<3>  |   11.306(R)|clk_BUFGP         |   0.000|
+seg7_out<4>  |   12.650(R)|clk_BUFGP         |   0.000|
+seg7_out<5>  |   11.641(R)|clk_BUFGP         |   0.000|
+seg7_out<6>  |   12.469(R)|clk_BUFGP         |   0.000|
+seg7_out<7>  |   12.624(R)|clk_BUFGP         |   0.000|
 -------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -81,11 +81,11 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.756|         |         |         |
+clk            |    5.562|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed Dec 01 14:17:41 2010 
+Analysis completed Wed Dec 01 14:36:24 2010 
 --------------------------------------------------------------------------------
 
 Trace Settings:
