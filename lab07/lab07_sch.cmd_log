@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/VHDL/lab07/lab07_sch.xst" -ofn "D:/VHDL/lab07/lab07_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lab07_pm.ucf -p xc3s500e-fg320-5 lab07_sch.ngc lab07_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lab07_sch_map.ncd lab07_sch.ngd lab07_sch.pcf 
+par -w -intstyle ise -ol high -t 1 lab07_sch_map.ncd lab07_sch.ncd lab07_sch.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab07_sch.twx lab07_sch.ncd -o lab07_sch.twr lab07_sch.pcf -ucf lab07_pm.ucf 
+bitgen -intstyle ise -f lab07_sch.ut lab07_sch.ncd 

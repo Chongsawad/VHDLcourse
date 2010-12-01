@@ -1,0 +1,159 @@
+Release 12.3 par M.70d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+IZEN-PC::  Wed Dec 01 12:11:09 2010
+
+par -w -intstyle ise -ol high -t 1 lab07_sch_map.ncd lab07_sch.ncd
+lab07_sch.pcf 
+
+
+Constraints file: lab07_sch.pcf.
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\12.3\ISE_DS\ISE\.
+   "lab07_sch" is an NCD, version 3.2, device xc3s500e, package fg320, speed -5
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.27 2010-09-15".
+
+
+Design Summary Report:
+
+ Number of External IOBs                          12 out of 232     5%
+
+   Number of External Input IOBs                  4
+
+      Number of External Input IBUFs              4
+        Number of LOCed External Input IBUFs      4 out of 4     100%
+
+
+   Number of External Output IOBs                 8
+
+      Number of External Output IOBs              8
+        Number of LOCed External Output IOBs      8 out of 8     100%
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of Slices                          4 out of 4656    1%
+      Number of SLICEMs                      0 out of 2328    0%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 2 secs 
+Finished initial Timing Analysis.  REAL time: 2 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 2 secs 
+Total CPU  time at the beginning of Placer: 2 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:cb6bca16) REAL time: 2 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:cb6bca16) REAL time: 2 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:cb6bca16) REAL time: 2 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+Phase 4.2  Initial Clock and IO Placement (Checksum:cb6bca16) REAL time: 2 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:cb6bca16) REAL time: 2 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:cb6bca16) REAL time: 2 secs 
+
+Phase 7.8  Global Placement
+..
+Phase 7.8  Global Placement (Checksum:72cd3db3) REAL time: 2 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:72cd3db3) REAL time: 2 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:74dcd99b) REAL time: 2 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:74dcd99b) REAL time: 2 secs 
+
+Total REAL time to Placer completion: 2 secs 
+Total CPU  time to Placer completion: 2 secs 
+Writing design to file lab07_sch.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 40 unrouted;      REAL time: 10 secs 
+
+Phase  2  : 40 unrouted;      REAL time: 10 secs 
+
+Phase  3  : 4 unrouted;      REAL time: 10 secs 
+
+Phase  4  : 4 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+
+Updating file: lab07_sch.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+
+Total REAL time to Router completion: 11 secs 
+Total CPU time to Router completion: 11 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 12 secs 
+Total CPU time to PAR completion: 12 secs 
+
+Peak Memory Usage:  188 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file lab07_sch.ncd
+
+
+
+PAR done!

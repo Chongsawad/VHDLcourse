@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\VHDL\lab06\light_pattern.ncd
+OUTFILE=D:\VHDL\lab06\light_pattern.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=D:\VHDL\lab06
+LICENSE=WebPack
+USER_INFO=0_0_918

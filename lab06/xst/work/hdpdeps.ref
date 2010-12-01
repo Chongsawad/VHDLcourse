@@ -1,0 +1,6 @@
+V3 3
+FL D:/VHDL/lab06/light_pattern.vhd 2010/12/01.11:16:03 M.70d
+EN work/light_pattern 1291176970 FL D:/VHDL/lab06/light_pattern.vhd \
+      PB ieee/std_logic_1164 1284609568
+AR work/light_pattern/Behavioral 1291176971 \
+      FL D:/VHDL/lab06/light_pattern.vhd EN work/light_pattern 1291176970

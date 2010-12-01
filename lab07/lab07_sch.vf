@@ -1,0 +1,115 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 12.3
+//  \   \         Application : sch2hdl
+//  /   /         Filename : lab07_sch.vf
+// /___/   /\     Timestamp : 12/01/2010 12:10:51
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog D:/VHDL/lab07/lab07_sch.vf -w D:/VHDL/lab07/lab07_sch.sch
+//Design Name: lab07_sch
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module D3_8E_MXILINX_lab07_sch(A0, 
+                               A1, 
+                               A2, 
+                               E, 
+                               D0, 
+                               D1, 
+                               D2, 
+                               D3, 
+                               D4, 
+                               D5, 
+                               D6, 
+                               D7);
+
+    input A0;
+    input A1;
+    input A2;
+    input E;
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   output D4;
+   output D5;
+   output D6;
+   output D7;
+   
+   
+   AND4  I_36_30 (.I0(A2), 
+                 .I1(A1), 
+                 .I2(A0), 
+                 .I3(E), 
+                 .O(D7));
+   AND4B1  I_36_31 (.I0(A0), 
+                   .I1(A2), 
+                   .I2(A1), 
+                   .I3(E), 
+                   .O(D6));
+   AND4B1  I_36_32 (.I0(A1), 
+                   .I1(A2), 
+                   .I2(A0), 
+                   .I3(E), 
+                   .O(D5));
+   AND4B2  I_36_33 (.I0(A1), 
+                   .I1(A0), 
+                   .I2(A2), 
+                   .I3(E), 
+                   .O(D4));
+   AND4B1  I_36_34 (.I0(A2), 
+                   .I1(A0), 
+                   .I2(A1), 
+                   .I3(E), 
+                   .O(D3));
+   AND4B2  I_36_35 (.I0(A2), 
+                   .I1(A0), 
+                   .I2(A1), 
+                   .I3(E), 
+                   .O(D2));
+   AND4B2  I_36_36 (.I0(A2), 
+                   .I1(A1), 
+                   .I2(A0), 
+                   .I3(E), 
+                   .O(D1));
+   AND4B3  I_36_37 (.I0(A2), 
+                   .I1(A1), 
+                   .I2(A0), 
+                   .I3(E), 
+                   .O(D0));
+endmodule
+`timescale 1ns / 1ps
+
+module lab07_sch(Dec_in, 
+                 en, 
+                 Dec_out);
+
+    input [2:0] Dec_in;
+    input en;
+   output [7:0] Dec_out;
+   
+   
+   (* HU_SET = "XLXI_1_0" *) 
+   D3_8E_MXILINX_lab07_sch  XLXI_1 (.A0(Dec_in[0]), 
+                                   .A1(Dec_in[1]), 
+                                   .A2(Dec_in[2]), 
+                                   .E(en), 
+                                   .D0(Dec_out[0]), 
+                                   .D1(Dec_out[1]), 
+                                   .D2(Dec_out[2]), 
+                                   .D3(Dec_out[3]), 
+                                   .D4(Dec_out[4]), 
+                                   .D5(Dec_out[5]), 
+                                   .D6(Dec_out[6]), 
+                                   .D7(Dec_out[7]));
+endmodule

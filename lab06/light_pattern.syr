@@ -1,0 +1,439 @@
+Release 12.3 - xst M.70d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: light_pattern.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "light_pattern.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "light_pattern"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : light_pattern
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/VHDL/lab06/light_pattern.vhd" in Library work.
+Entity <light_pattern> compiled.
+Entity <light_pattern> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <light_pattern> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <light_pattern> in library <work> (Architecture <behavioral>).
+Entity <light_pattern> analyzed. Unit <light_pattern> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <light_pattern>.
+    Related source file is "D:/VHDL/lab06/light_pattern.vhd".
+    Found finite state machine <FSM_0> for signal <cur_state>.
+    -----------------------------------------------------------------------
+    | States             | 20                                             |
+    | Transitions        | 43                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | p1_1st                                         |
+    | Power Up State     | p1_1st                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <seg7_disp>.
+    Found 23-bit up counter for signal <delay_cnt>.
+    Found 1-bit register for signal <disp_en>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred   9 D-type flip-flop(s).
+Unit <light_pattern> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 23-bit up counter                                     : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 8-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <cur_state/FSM> on signal <cur_state[1:5]> with user encoding.
+--------------------
+ State  | Encoding
+--------------------
+ p1_1st | 00000
+ p1_2st | 00001
+ p1_3st | 00010
+ p1_4st | 00011
+ p1_5st | 00100
+ p1_6st | 00101
+ p2_1st | 00110
+ p2_2st | 00111
+ p2_3st | 01000
+ p2_4st | 01001
+ p2_5st | 01010
+ p2_6st | 01011
+ p3_1st | 01100
+ p3_2st | 01101
+ p3_3st | 01110
+ p3_4st | 01111
+ p3_5st | 10000
+ p3_6st | 10001
+ p3_7st | 10010
+ p3_8st | 10011
+--------------------
+WARNING:Xst:1710 - FF/Latch <seg7_disp_0> (without init value) has a constant value of 1 in block <light_pattern>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 1
+ 23-bit up counter                                     : 1
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <seg7_disp_0> (without init value) has a constant value of 1 in block <light_pattern>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <light_pattern> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block light_pattern, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 36
+ Flip-Flops                                            : 36
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : light_pattern.ngr
+Top Level Output File Name         : light_pattern
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# BELS                             : 137
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 23
+#      LUT2                        : 27
+#      LUT2_L                      : 1
+#      LUT3                        : 4
+#      LUT3_L                      : 2
+#      LUT4                        : 15
+#      LUT4_D                      : 1
+#      LUT4_L                      : 3
+#      MUXCY                       : 28
+#      MUXF5                       : 3
+#      MUXF6                       : 3
+#      VCC                         : 1
+#      XORCY                       : 23
+# FlipFlops/Latches                : 36
+#      FDC                         : 29
+#      FDE                         : 7
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      IBUF                        : 2
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       43  out of   4656     0%  
+ Number of Slice Flip Flops:             36  out of   9312     0%  
+ Number of 4 input LUTs:                 78  out of   9312     0%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    232     4%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 36    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 29    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.097ns (Maximum Frequency: 196.196MHz)
+   Minimum input arrival time before clock: 3.875ns
+   Maximum output required time after clock: 4.040ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.097ns (frequency: 196.196MHz)
+  Total number of paths / destination ports: 911 / 36
+-------------------------------------------------------------------------
+Delay:               5.097ns (Levels of Logic = 24)
+  Source:            delay_cnt_1 (FF)
+  Destination:       delay_cnt_22 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: delay_cnt_1 to delay_cnt_22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.532  delay_cnt_1 (delay_cnt_1)
+     LUT1:I0->O            1   0.612   0.000  Mcount_delay_cnt_cy<1>_rt (Mcount_delay_cnt_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Mcount_delay_cnt_cy<1> (Mcount_delay_cnt_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<2> (Mcount_delay_cnt_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<3> (Mcount_delay_cnt_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<4> (Mcount_delay_cnt_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<5> (Mcount_delay_cnt_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<6> (Mcount_delay_cnt_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<7> (Mcount_delay_cnt_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<8> (Mcount_delay_cnt_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<9> (Mcount_delay_cnt_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<10> (Mcount_delay_cnt_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<11> (Mcount_delay_cnt_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<12> (Mcount_delay_cnt_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<13> (Mcount_delay_cnt_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<14> (Mcount_delay_cnt_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<15> (Mcount_delay_cnt_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<16> (Mcount_delay_cnt_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<17> (Mcount_delay_cnt_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<18> (Mcount_delay_cnt_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<19> (Mcount_delay_cnt_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_delay_cnt_cy<20> (Mcount_delay_cnt_cy<20>)
+     MUXCY:CI->O           0   0.052   0.000  Mcount_delay_cnt_cy<21> (Mcount_delay_cnt_cy<21>)
+     XORCY:CI->O           1   0.699   0.426  Mcount_delay_cnt_xor<22> (Result<22>)
+     LUT2:I1->O            1   0.612   0.000  Mcount_delay_cnt_eqn_221 (Mcount_delay_cnt_eqn_22)
+     FDC:D                     0.268          delay_cnt_22
+    ----------------------------------------
+    Total                      5.097ns (4.139ns logic, 0.958ns route)
+                                       (81.2% logic, 18.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              3.875ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       seg7_disp_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to seg7_disp_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            30   1.106   1.072  rst_IBUF (rst_IBUF)
+     INV:I->O              7   0.612   0.602  rst_inv1_INV_0 (rst_inv)
+     FDE:CE                    0.483          seg7_disp_1
+    ----------------------------------------
+    Total                      3.875ns (2.201ns logic, 1.674ns route)
+                                       (56.8% logic, 43.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            seg7_disp_7 (FF)
+  Destination:       seg7_disp<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: seg7_disp_7 to seg7_disp<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.514   0.357  seg7_disp_7 (seg7_disp_7)
+     OBUF:I->O                 3.169          seg7_disp_7_OBUF (seg7_disp<7>)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.40 secs
+ 
+--> 
+
+Total memory usage is 187660 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

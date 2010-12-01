@@ -1,0 +1,28 @@
+xst -intstyle ise -ifn "D:/VHDL/lab06/light_pattern.xst" -ofn "D:/VHDL/lab06/light_pattern.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 light_pattern.ngc light_pattern.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o light_pattern_map.ncd light_pattern.ngd light_pattern.pcf 
+par -w -intstyle ise -ol high -t 1 light_pattern_map.ncd light_pattern.ncd light_pattern.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml light_pattern.twx light_pattern.ncd -o light_pattern.twr light_pattern.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc light_pattern_pm.ucf -p xc3s500e-fg320-5 light_pattern.ngc light_pattern.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o light_pattern_map.ncd light_pattern.ngd light_pattern.pcf 
+par -w -intstyle ise -ol high -t 1 light_pattern_map.ncd light_pattern.ncd light_pattern.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml light_pattern.twx light_pattern.ncd -o light_pattern.twr light_pattern.pcf -ucf light_pattern_pm.ucf 
+bitgen -intstyle ise -f light_pattern.ut light_pattern.ncd 
+xst -intstyle ise -ifn "D:/VHDL/lab06/light_pattern.xst" -ofn "D:/VHDL/lab06/light_pattern.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc light_pattern_pm.ucf -p xc3s500e-fg320-5 light_pattern.ngc light_pattern.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o light_pattern_map.ncd light_pattern.ngd light_pattern.pcf 
+par -w -intstyle ise -ol high -t 1 light_pattern_map.ncd light_pattern.ncd light_pattern.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml light_pattern.twx light_pattern.ncd -o light_pattern.twr light_pattern.pcf -ucf light_pattern_pm.ucf 
+bitgen -intstyle ise -f light_pattern.ut light_pattern.ncd 
+xst -intstyle ise -ifn "D:/VHDL/lab06/light_pattern.xst" -ofn "D:/VHDL/lab06/light_pattern.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc light_pattern_pm.ucf -p xc3s500e-fg320-5 light_pattern.ngc light_pattern.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o light_pattern_map.ncd light_pattern.ngd light_pattern.pcf 
+par -w -intstyle ise -ol high -t 1 light_pattern_map.ncd light_pattern.ncd light_pattern.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml light_pattern.twx light_pattern.ncd -o light_pattern.twr light_pattern.pcf -ucf light_pattern_pm.ucf 
+bitgen -intstyle ise -f light_pattern.ut light_pattern.ncd 
+xst -intstyle ise -ifn "D:/VHDL/lab06/light_pattern.xst" -ofn "D:/VHDL/lab06/light_pattern.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc light_pattern_pm.ucf -p xc3s500e-fg320-5 light_pattern.ngc light_pattern.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o light_pattern_map.ncd light_pattern.ngd light_pattern.pcf 
+par -w -intstyle ise -ol high -t 1 light_pattern_map.ncd light_pattern.ncd light_pattern.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml light_pattern.twx light_pattern.ncd -o light_pattern.twr light_pattern.pcf -ucf light_pattern_pm.ucf 
+bitgen -intstyle ise -f light_pattern.ut light_pattern.ncd 

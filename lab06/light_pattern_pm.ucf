@@ -1,0 +1,13 @@
+NET	"clk" 	LOC = B8;
+NET	"rst" 	LOC = H13;
+
+NET	"seg7_disp<0>" 	LOC = C17;
+NET	"seg7_disp<1>" 	LOC = H14;
+NET	"seg7_disp<2>" 	LOC = J17;
+NET	"seg7_disp<3>" 	LOC = G14;
+NET	"seg7_disp<4>" 	LOC = D16;
+NET	"seg7_disp<5>" 	LOC = D17;
+NET	"seg7_disp<6>" 	LOC = F18;
+NET	"seg7_disp<7>" 	LOC = L18;
+
+NET	"sw1" 	LOC = B18;

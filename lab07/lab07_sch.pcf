@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map M.70d on Wed Dec 01 12:11:07 2010
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "en" LOCATE = SITE "K17" LEVEL 1;
+COMP "Dec_out<0>" LOCATE = SITE "J14" LEVEL 1;
+COMP "Dec_out<1>" LOCATE = SITE "J15" LEVEL 1;
+COMP "Dec_out<2>" LOCATE = SITE "K15" LEVEL 1;
+COMP "Dec_out<3>" LOCATE = SITE "K14" LEVEL 1;
+COMP "Dec_out<4>" LOCATE = SITE "E17" LEVEL 1;
+COMP "Dec_out<5>" LOCATE = SITE "P15" LEVEL 1;
+COMP "Dec_out<6>" LOCATE = SITE "F4" LEVEL 1;
+COMP "Dec_out<7>" LOCATE = SITE "R4" LEVEL 1;
+COMP "Dec_in<0>" LOCATE = SITE "G18" LEVEL 1;
+COMP "Dec_in<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "Dec_in<2>" LOCATE = SITE "K18" LEVEL 1;
+SCHEMATIC END;
+
