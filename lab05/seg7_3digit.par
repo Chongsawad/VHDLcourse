@@ -1,7 +1,7 @@
 Release 12.3 par M.70d (nt)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
-SYSTEM::  Tue Nov 30 16:35:46 2010
+SYSTEM::  Tue Nov 30 16:54:02 2010
 
 par -w -intstyle ise -ol high -t 1 seg7_3digit_map.ncd seg7_3digit.ncd
 seg7_3digit.pcf 
@@ -92,9 +92,9 @@ Phase 9.18  Placement Optimization
 Phase 9.18  Placement Optimization (Checksum:46cd381) REAL time: 13 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:46cd381) REAL time: 13 secs 
+Phase 10.5  Local Placement Optimization (Checksum:46cd381) REAL time: 14 secs 
 
-Total REAL time to Placer completion: 13 secs 
+Total REAL time to Placer completion: 14 secs 
 Total CPU  time to Placer completion: 13 secs 
 Writing design to file seg7_3digit.ncd
 
@@ -105,27 +105,27 @@ Starting Router
 
 Phase  1  : 212 unrouted;      REAL time: 21 secs 
 
-Phase  2  : 194 unrouted;      REAL time: 21 secs 
+Phase  2  : 194 unrouted;      REAL time: 22 secs 
 
-Phase  3  : 26 unrouted;      REAL time: 21 secs 
+Phase  3  : 26 unrouted;      REAL time: 22 secs 
 
 Phase  4  : 43 unrouted; (Par is working to improve performance)     REAL time: 22 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 22 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 23 secs 
 
 Updating file: seg7_3digit.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 22 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 23 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 24 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
 
-Total REAL time to Router completion: 24 secs 
+Total REAL time to Router completion: 25 secs 
 Total CPU time to Router completion: 24 secs 
 
 Partition Implementation Status
@@ -181,7 +181,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 25 secs 
 Total CPU time to PAR completion: 25 secs 
 
-Peak Memory Usage:  190 MB
+Peak Memory Usage:  189 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.
