@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "D:/VHDL/lab08/uart_lab.xst" -ofn "D:/VHDL/lab08/uart_lab.syr" 
+xst -intstyle ise -ifn "D:/VHDL/lab08/uart_lab.xst" -ofn "D:/VHDL/lab08/uart_lab.syr" 
+xst -intstyle ise -ifn "D:/VHDL/lab08/uart_lab.xst" -ofn "D:/VHDL/lab08/uart_lab.syr" 
+xst -intstyle ise -ifn "D:/VHDL/lab08/uart_lab.xst" -ofn "D:/VHDL/lab08/uart_lab.syr" 
+xst -intstyle ise -ifn "D:/VHDL/lab08/uart_lab.xst" -ofn "D:/VHDL/lab08/uart_lab.syr" 
+xst -intstyle ise -ifn "D:/VHDL/lab08/uart_lab.xst" -ofn "D:/VHDL/lab08/uart_lab.syr" 
+xst -intstyle ise -ifn "D:/VHDL/lab08/uart_lab.xst" -ofn "D:/VHDL/lab08/uart_lab.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uart_pm.ucf -p xc3s500e-fg320-5 uart_lab.ngc uart_lab.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o uart_lab_map.ncd uart_lab.ngd uart_lab.pcf 
+par -w -intstyle ise -ol high -t 1 uart_lab_map.ncd uart_lab.ncd uart_lab.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml uart_lab.twx uart_lab.ncd -o uart_lab.twr uart_lab.pcf -ucf uart_pm.ucf 
+bitgen -intstyle ise -f uart_lab.ut uart_lab.ncd 

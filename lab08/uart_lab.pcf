@@ -1,0 +1,33 @@
+//! **************************************************************************
+// Written by: Map M.70d on Wed Dec 01 14:17:04 2010
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "RxD" LOCATE = SITE "U6" LEVEL 1;
+COMP "TxD" LOCATE = SITE "P9" LEVEL 1;
+COMP "we_n" LOCATE = SITE "B18" LEVEL 1;
+COMP "data_in<0>" LOCATE = SITE "G18" LEVEL 1;
+COMP "data_in<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "data_in<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "data_in<3>" LOCATE = SITE "K17" LEVEL 1;
+COMP "data_in<4>" LOCATE = SITE "L14" LEVEL 1;
+COMP "seg7_out<0>" LOCATE = SITE "C17" LEVEL 1;
+COMP "data_in<5>" LOCATE = SITE "L13" LEVEL 1;
+COMP "seg7_out<1>" LOCATE = SITE "H14" LEVEL 1;
+COMP "data_in<6>" LOCATE = SITE "N17" LEVEL 1;
+COMP "seg7_out<2>" LOCATE = SITE "J17" LEVEL 1;
+COMP "digit_scan<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "data_in<7>" LOCATE = SITE "R17" LEVEL 1;
+COMP "seg7_out<3>" LOCATE = SITE "G14" LEVEL 1;
+COMP "digit_scan<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "seg7_out<4>" LOCATE = SITE "D16" LEVEL 1;
+COMP "digit_scan<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "seg7_out<5>" LOCATE = SITE "D17" LEVEL 1;
+COMP "digit_scan<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "seg7_out<6>" LOCATE = SITE "F18" LEVEL 1;
+COMP "seg7_out<7>" LOCATE = SITE "L18" LEVEL 1;
+COMP "rst" LOCATE = SITE "H13" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

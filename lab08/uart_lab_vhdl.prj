@@ -1,0 +1,5 @@
+vhdl work "D:\VHDL\lab08\Transmitter.vhd"
+vhdl work "D:\VHDL\lab08\seg7_2digit.vhd"
+vhdl work "D:\VHDL\lab08\receiver.vhd"
+vhdl work "D:\VHDL\lab08\Baudrate_DIV.vhd"
+vhdl work "D:\VHDL\lab08\uart_lab.vhd"

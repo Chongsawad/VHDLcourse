@@ -1,0 +1,29 @@
+NET	"clk"	LOC = B8;
+NET	"rst"	LOC = H13;
+NET	"we_n"	LOC = B18;
+
+NET	"RxD"	LOC = U6;
+NET	"TxD"	LOC = P9;
+
+NET	"Data_in<0>"	LOC = G18;
+NET	"Data_in<1>"	LOC = H18;
+NET	"Data_in<2>"	LOC = K18;
+NET	"Data_in<3>"	LOC = K17;
+NET	"Data_in<4>"	LOC = L14;
+NET	"Data_in<5>"	LOC = L13;
+NET	"Data_in<6>"	LOC = N17;
+NET	"Data_in<7>"	LOC = R17;
+
+NET	"digit_scan<0>"	LOC = F17;
+NET	"digit_scan<1>"	LOC = H17;
+NET	"digit_scan<2>"	LOC = C18;
+NET	"digit_scan<3>"	LOC = F15;
+
+NET	"seg7_out<0>"	LOC = C17;
+NET	"seg7_out<1>"	LOC = H14;
+NET	"seg7_out<2>"	LOC = J17;
+NET	"seg7_out<3>"	LOC = G14;
+NET	"seg7_out<4>"	LOC = D16;
+NET	"seg7_out<5>"	LOC = D17;
+NET	"seg7_out<6>"	LOC = F18;
+NET	"seg7_out<7>"	LOC = L18;

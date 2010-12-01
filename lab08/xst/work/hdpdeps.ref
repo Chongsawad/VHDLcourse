@@ -1,0 +1,25 @@
+V3 19
+FL D:/VHDL/lab08/Baudrate_DIV.vhd 2010/12/01.12:23:01 M.70d
+EN work/Baudrate_div 1291187405 FL D:/VHDL/lab08/Baudrate_DIV.vhd \
+      PB ieee/std_logic_1164 1284609568
+AR work/Baudrate_div/RTL 1291187406 \
+      FL D:/VHDL/lab08/Baudrate_DIV.vhd EN work/Baudrate_div 1291187405
+FL D:/VHDL/lab08/receiver.vhd 2010/12/01.12:23:01 M.70d
+EN work/receiver 1291187409 FL D:/VHDL/lab08/receiver.vhd PB ieee/std_logic_1164 1284609568
+AR work/receiver/RTL 1291187410 \
+      FL D:/VHDL/lab08/receiver.vhd EN work/receiver 1291187409
+FL D:/VHDL/lab08/seg7_2digit.vhd 2010/12/01.12:23:01 M.70d
+EN work/seg7_2digit 1291187411 FL D:/VHDL/lab08/seg7_2digit.vhd \
+      PB ieee/std_logic_1164 1284609568
+AR work/seg7_2digit/rtl 1291187412 \
+      FL D:/VHDL/lab08/seg7_2digit.vhd EN work/seg7_2digit 1291187411
+FL D:/VHDL/lab08/Transmitter.vhd 2010/12/01.12:23:01 M.70d
+EN work/Transmitter 1291187407 FL D:/VHDL/lab08/Transmitter.vhd \
+      PB ieee/std_logic_1164 1284609568
+AR work/Transmitter/RTL 1291187408 \
+      FL D:/VHDL/lab08/Transmitter.vhd EN work/Transmitter 1291187407
+FL D:/VHDL/lab08/uart_lab.vhd 2010/12/01.14:10:02 M.70d
+EN work/uart_lab 1291187413 FL D:/VHDL/lab08/uart_lab.vhd PB ieee/std_logic_1164 1284609568
+AR work/uart_lab/Behavioral 1291187414 \
+      FL D:/VHDL/lab08/uart_lab.vhd EN work/uart_lab 1291187413 CP Baudrate_div \
+      CP Transmitter CP receiver CP seg7_2digit

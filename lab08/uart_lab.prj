@@ -1,0 +1,5 @@
+vhdl work "Transmitter.vhd"
+vhdl work "seg7_2digit.vhd"
+vhdl work "receiver.vhd"
+vhdl work "Baudrate_DIV.vhd"
+vhdl work "uart_lab.vhd"
